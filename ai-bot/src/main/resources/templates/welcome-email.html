@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Welcome Email</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; color: #333;">
+<!-- Logo -->
+<div style="text-align: center; margin-top: 20px;">
+    <img src="https://i.postimg.cc/RFDqHtqd/ai-chat-logo-svg.png" alt="Company Logo" style="height: 50px;"/>
+</div>
+
+<!-- Welcome Message -->
+<div style="text-align: center; margin-top: 20px;">
+    <h1>Hi [[${userName}]]!</h1>
+</div>
+
+<!-- Registration Confirmation -->
+<div style="margin: 20px auto; max-width: 600px; text-align: center;">
+    <p>Congratulations! You have successfully registered for access to your dashboard.</p>
+
+    <!-- Sign In Button -->
+    <p>
+        <a href="http://localhost:3000/signin"
+           style="display: inline-block; padding: 10px 20px; color: white; background-color: #4CAF50;
+               text-decoration: none; border-radius: 4px; margin-top: 15px;">Sign In Here</a>
+    </p>
+
+    <!-- Additional Info -->
+    <p>If you encounter any issues, please copy and paste the following link into your browser:</p>
+    <p><a href="http://localhost:3000/signin" style="color: #4CAF50;">[[${signInUrl}]]</a></p>
+
+    <!-- Footer -->
+    <p>For any assistance, please contact our support team.</p>
+</div>
+</body>
+</html>
