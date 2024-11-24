@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .bg-primary {
+    height: 100%;
+  }
+  
+  input[type="text"] {
+    border-radius: 0;
+  }
+  
+  .btn-secondary {
+    width: 100%;
+  }
+  
